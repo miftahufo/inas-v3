@@ -7,7 +7,7 @@ use App\Http\Controllers\ParentController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->to('/admin');
 });
 
 Route::get('/api/test', function () {
