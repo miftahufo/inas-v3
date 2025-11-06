@@ -193,7 +193,7 @@
                          alt="Logo Sekolah/Instansi" 
                          onerror="this.style.display='none'; console.error('Logo Gagal Dimuat. URL yang Dicoba: ' + this.src);">
                     
-                    <h1>LAPORAN KEHADIRAN HARIAN SISWA SMP DAN SMK ISLAM BIHBUL</h1>
+                    <h1>LAPORAN KEHADIRAN HARIAN SISWA/SISWI SMP DAN SMK ISLAM BIHBUL</h1>
                     <p class="subtitle">Data Status Absensi Real-time ({{ \Carbon\Carbon::now()->format('d M Y') }})</p>
                 </div>
                 
