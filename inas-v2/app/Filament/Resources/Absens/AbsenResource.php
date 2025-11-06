@@ -17,9 +17,10 @@ use Filament\Tables\Table;
 
 class AbsenResource extends Resource
 {
+    protected static ?string $navigationLabel = 'Absen Harian'; // Atau 'Absen'
     protected static ?string $model = Student::class;
     
-    protected static ?string $navigationLabel = 'Absen Harian'; // Atau 'Absen'
+   
     
     // Pastikan properti ini ada (jika Anda ingin mengontrol urutan)
     protected static ?int $navigationSort = 1; // Atur ke angka rendah agar muncul di atas
