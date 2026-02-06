@@ -10,6 +10,10 @@ set_time_limit(60);
 $baseUploadDir = 'D:/laragon1/www/inas/inas-v2/public/storage/images/';
 $dbStoragePath = 'storage/images/'; // Diperbaiki ke 'images/' agar sinkron dengan path DB
 
+//eksisting 
+// $baseUploadDir = 'inas-v2/public/storage/images/';
+// $dbStoragePath = 'storage/images/'; // Diperbaiki ke 'images/' agar sinkron dengan path DB
+
 if (!is_dir($baseUploadDir)) {
     http_response_code(500);
     die("ERROR|Server: Direktori unggahan tidak ditemukan atau tidak dapat ditulis.");
@@ -22,6 +26,12 @@ $host = "127.0.0.1";
 $user = "root"; // default laragon
 $pass = ""; // default laragon
 $db   = "inas"; 
+
+//eksisting
+// $host = "127.0.0.1";
+// $user = "u683701725_caraka"; // default laragon
+// $pass = "Caraka12345678$"; // default laragon
+// $db   = "u683701725_inas";
 
 $mysqli = new mysqli($host, $user, $pass, $db);
 if ($mysqli->connect_error) {

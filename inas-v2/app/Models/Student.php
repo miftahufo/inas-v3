@@ -22,6 +22,7 @@ class Student extends Model
         'nama_lengkap',
         'kelas',
         'alamat',
+        'honor_harian',
     ];
 
     public function currentAttendance()
